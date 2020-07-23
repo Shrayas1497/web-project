@@ -1,0 +1,427 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sty",
+				"stylesheet"
+			],
+			[
+				"j",
+				"jquery"
+			],
+			[
+				"co",
+				"cover\tbackground-size"
+			],
+			[
+				"a",
+				"auto\tbackground-size"
+			],
+			[
+				"h",
+				"html\thtml"
+			],
+			[
+				"Model",
+				"Model_Name"
+			],
+			[
+				"mode",
+				"models"
+			],
+			[
+				"mobile",
+				"mobilelist"
+			],
+			[
+				"http",
+				"Http404"
+			],
+			[
+				"Mobi",
+				"Mobile"
+			],
+			[
+				"mobi",
+				"mobileupdate"
+			],
+			[
+				"hTT",
+				"Http404"
+			],
+			[
+				"Mobile",
+				"MobileForm"
+			],
+			[
+				"mo",
+				"MobileList"
+			],
+			[
+				"re",
+				"redirect"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"for",
+				"form"
+			],
+			[
+				"form",
+				"forms"
+			],
+			[
+				"reques",
+				"request"
+			],
+			[
+				"mob",
+				"mobile"
+			],
+			[
+				"M",
+				"MobileDetail"
+			],
+			[
+				"mobil",
+				"mobilestore"
+			],
+			[
+				"m",
+				"max_length"
+			],
+			[
+				"MOBILE",
+				"mobilestore"
+			],
+			[
+				"box",
+				"box-shadow\tproperty"
+			],
+			[
+				"shadow",
+				"box-shadow\tproperty"
+			],
+			[
+				"st",
+				"style"
+			],
+			[
+				"url",
+				"urlpatterns"
+			],
+			[
+				"c",
+				"clg"
+			],
+			[
+				"p",
+				"Person"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"margin",
+				"margin-left\tproperty"
+			],
+			[
+				"mar",
+				"margin-right\tproperty"
+			],
+			[
+				"bac",
+				"background-color\tproperty"
+			],
+			[
+				"li",
+				"link\tTag"
+			],
+			[
+				"th",
+				"th\tTag"
+			],
+			[
+				"pa",
+				"padding-left\tproperty"
+			],
+			[
+				"bor",
+				"border-width\tproperty"
+			],
+			[
+				"bo",
+				"border-style\tproperty"
+			],
+			[
+				"backgra",
+				"background-image\tproperty"
+			],
+			[
+				"back",
+				"background-image\tproperty"
+			],
+			[
+				"ba",
+				"background-color\tproperty"
+			],
+			[
+				"font",
+				"font-family\tproperty"
+			],
+			[
+				"fon",
+				"font-style\tproperty"
+			],
+			[
+				"fo",
+				"font-size\tproperty"
+			],
+			[
+				"l",
+				"label\tTag"
+			],
+			[
+				"u",
+				"ul\tTag"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"se",
+				"select\tTag"
+			],
+			[
+				"i",
+				"img\tTag"
+			],
+			[
+				"w",
+				"width\tproperty"
+			],
+			[
+				"ta",
+				"table\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 164.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Shrayas/Desktop/particles yeah/par.html",
+		"/C/Users/Shrayas/Desktop/12.html",
+		"/C/Users/Shrayas/MobileShop/mobilestore/templates/cssintro.html",
+		"/C/Users/Shrayas/Desktop/proc.html",
+		"/C/Users/Shrayas/MobileShop/mobilestore/templates/AddMobile.html",
+		"/C/Program Files/Sublime Text 3/tk.py",
+		"/C/Program Files/Sublime Text 3/1.cs",
+		"/C/Users/Shrayas/Desktop/New folder/prog1.py",
+		"/C/Users/Shrayas/Desktop/ecommerce/cssintro.html",
+		"/C/Users/Shrayas/AppData/Roaming/npm-cache/_cacache/content-v2/sha1/0d/d4/c9ffaabc357960b1b724115d7e0e86a2e1f5",
+		"/C/Users/Shrayas/Desktop/1.html",
+		"/C/Users/Shrayas/MobileShop/MobileShop/settings.py",
+		"/C/Users/Shrayas/MobileShop/mobilestore/views.py",
+		"/C/Users/Shrayas/MobileShop/mobilestore/urls.py",
+		"/C/Users/Shrayas/MobileShop/mobilestore/models.py",
+		"/C/Users/Shrayas/MobileShop/mobilestore/templates/MobileDetail.html",
+		"/C/Users/Shrayas/MobileShop/mobilestore/admin.py",
+		"/C/Users/Shrayas/Desktop/abc.py",
+		"/C/Users/Shrayas/MobileShop/mobilestore/forms.py",
+		"/C/Users/Shrayas/MobileShop/mobilestore/templates/MobileList.html",
+		"/C/Users/Shrayas/MobileShop/MobileShop/urls.py",
+		"/C/Users/Shrayas/MobileShop/mobilestore/templates/Homepage.html",
+		"/C/Users/Shrayas/Desktop/intern/cssintro.html",
+		"/C/Users/Shrayas/MobileShop/mobilestore/static/laptop.png",
+		"/C/Users/Shrayas/Desktop/intern/bootsrap.css",
+		"/C/Users/Shrayas/MobileShop/mobilestore/static/e.css",
+		"/C/Users/Shrayas/MobileShop/mobilestore/static/intro.css",
+		"/C/Users/Shrayas/MobileShop/mobilestore/intro.css",
+		"/C/Users/Shrayas/MobileShop/mobilestore/migrations/__init__.py",
+		"/C/Users/Shrayas/MobileShop/mobilestore/templates/intro.css",
+		"/C/Users/Shrayas/Desktop/intern/practice/project.css",
+		"/C/Users/Shrayas/Desktop/intern/practice/into.css",
+		"/C/Users/Shrayas/Desktop/intern/python/2.py",
+		"/C/Users/Shrayas/Desktop/intern/python/connection.py",
+		"/C/Users/Shrayas/Desktop/intern/python/intro1.py",
+		"/C/Users/Shrayas/Desktop/intern/1.html",
+		"/C/Users/Shrayas/Desktop/intern/s/ip.png",
+		"/C/Users/Shrayas/Desktop/intern/project.css",
+		"/C/Users/Shrayas/Desktop/intern/project.html",
+		"/C/Users/Shrayas/Desktop/intern/intro.html",
+		"/C/Users/Shrayas/Desktop/intern/country.html",
+		"/C/Users/Shrayas/Desktop/intern/new form.html",
+		"/C/Users/Shrayas/Desktop/intern/bootsrap.html",
+		"/C/Users/Shrayas/Desktop/intern/intro.css",
+		"/C/Users/Shrayas/Desktop/intern/into.css",
+		"/C/Users/Shrayas/Desktop/intern/into.html",
+		"/C/Users/Shrayas/Desktop/intern/home.html",
+		"/C/Users/Shrayas/Desktop/intern/form.html",
+		"/C/Users/Shrayas/Desktop/intern/3.html",
+		"/C/Users/Shrayas/Desktop/intern/n.html",
+		"/C/Users/Shrayas/Desktop/intern/2.html"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "manage.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 224.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
