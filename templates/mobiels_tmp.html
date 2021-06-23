@@ -1,0 +1,429 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Mobiles</title>
+</head>
+
+<style type="text/css">
+
+
+*{
+ margin: 0px;
+ padding: 0px;
+}
+body{
+ font-family: arial;
+}
+.main{
+
+ margin: 2%;
+}
+ul {
+  list-style-type: none;
+  margin: 5;
+  padding: 5px;
+  overflow: hidden;
+  background-color:grey;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 60px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color:grey;
+}
+.mobile-card1,.mobile-card2,.mobile-card3,.mobile-card4,.mobile-card5,.mobile-card6,.mobile-card7,.mobile-card8,.mobile-card9{
+     width: 25%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px; 
+     margin: 3%;
+    }
+  
+ 
+
+.mobiletitle{
+ 
+  text-align: center;
+  padding: 10px;
+  
+ }
+ 
+
+h1{
+  font-size: 25px;
+ }
+
+ h2{
+  padding-top: 10px;
+  padding-left: 10px;
+ }
+button{
+  margin-top: 80px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+}
+button:hover{
+  background-color: blue;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+  text-align: center;
+}
+
+.mobile-flip-card1,.mobile-flip-card2,.mobile-flip-card3,.mobile-flip-card4,.mobile-flip-card5,.mobile-flip-card6,.mobile-flip-card7,.mobile-flip-card8,.mobile-flip-card9 {
+  background-color: transparent;
+  width: 325px;
+  height: 300px;
+  perspective: 1000px;
+}
+.mobile-flip-card-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.mobile-flip-card1:hover .mobile-flip-card-inner,.mobile-flip-card2:hover .mobile-flip-card-inner,.mobile-flip-card3:hover .mobile-flip-card-inner,.mobile-flip-card4:hover .mobile-flip-card-inner,.mobile-flip-card5:hover .mobile-flip-card-inner,.mobile-flip-card6:hover .mobile-flip-card-inner,.mobile-flip-card7:hover .mobile-flip-card-inner,.mobile-flip-card8:hover .mobile-flip-card-inner,.mobile-flip-card9:hover .mobile-flip-card-inner{
+  transform: rotateY(180deg);
+}
+
+.mobile-flip-card-front, .mobile-flip-card-back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.mobile-flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.mobile-flip-card-back {
+  background-color: grey;
+  color: white;
+  transform: rotateY(180deg);
+}
+h3{
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-left: 20px;
+}
+
+</style>
+<body>
+  <div class="navigation-bar">
+    <ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+</div>
+  
+
+<div class="main">
+  <div class="row1">
+
+ <!--cards -->
+
+{% block header %}
+<div class="mobile-card1">
+  <div class="mobile-flip-card1">
+  <div class="mobile-flip-card-inner">
+    <div class="mobile-flip-card-front">
+      <img src="{% static 'mob1.jpg' %}"alt="Avatar" style="width:325px;height:300px;">
+    </div>
+    <div class="mobile-flip-card-back">
+      <h3>
+        <ul>
+          <li>4.7-inch Retina HD display</li>
+          <li>12MP camera and 4K video</li>
+          <li>5MP FaceTime HD camera with Retina Flash</li>
+          <li>Touch ID for secure authentication</li>
+          <li>A9 chip</li>
+          <li>iOS 12 with Group FaceTime, Screen Time and even faster performance4</li>
+        </ul>
+      </h3>
+    </div>
+  </div>
+</div>
+<div class="mobiletitle">
+
+ <h1>
+Apple 6s</h1>
+</div>
+<h2>&#8377 20000</h2>
+<button>Buy Now</button>
+<button style="align: 50px">Add to cart</button>
+
+</div>
+<!--cards -->
+
+
+<div class="mobile-card2">
+  <div class="mobile-flip-card2">
+  <div class="mobile-flip-card-inner">
+    <div class="mobile-flip-card-front">
+      <img src="{% static 'mob2.png' %}"alt="Avatar" style="width:325px;height:300px;">
+    </div>
+    <div class="mobile-flip-card-back">
+      <h3>
+        <ul>
+          <li>3 GB RAM | 32 GB ROM | Expandable Upto 256 GB</li>
+          <li>13.97 cm (5.5 inch) Full HD Display</li>
+          <li>13MP Rear Camera | 8MP Front Camera</li>
+          <li>3300 mAh Battery</li>
+          <li>Exynos 7870 Octa Core 1.6GHz Processor</li>
+      </ul></h3> 
+      
+    </div>
+  </div>
+</div>
+
+<div class="mobiletitle">
+ <h1>
+Samsung J7</h1>
+</div>
+<h2>&#8377 9000</h2>
+<button>Buy Now</button>
+<button>Add to cart</button>
+
+</div>
+
+
+<!--cards -->
+
+
+<div class="mobile-card3">
+  <div class="mobile-flip-card3">
+  <div class="mobile-flip-card-inner">
+    <div class="mobile-flip-card-front">
+      <img src="{% static 'mob3.png' %}"alt="Avatar" style="width:325px;height:300px;">
+    </div>
+    <div class="mobile-flip-card-back">
+      <h3><ul>
+        <li>32 GB ROM |</li>
+        <li>11.94 cm (4.7 inch) Retina HD Display</li>
+        <li>12MP Rear Camera | 7MP Front Camera</li>
+        <li>Apple A10 Fusion 64-bit processor and Embedded M10 Motion Co-processor</li>
+        <li>iOS 13 Compatible</li>
+      </ul></h3> 
+  
+    </div>
+  </div>
+</div>
+<div class="mobiletitle">
+ <h1>
+Apple 7 </h1>
+</div>
+<h2>&#8377 35000</h2>
+<button>Buy Now</button>
+<button>Add to cart</button>
+</div>
+</div>
+<hr>
+<!--cards -->
+
+
+<div class="mobile-card4">
+  <div class="mobile-flip-card4">
+  <div class="mobile-flip-card-inner">
+    <div class="mobile-flip-card-front">
+      <img src="{% static 'mob4.jpg' %}"alt="Avatar" style="width:325px;height:300px;">
+    </div>
+    <div class="mobile-flip-card-back">
+      <h3>
+        <ul>
+          <li>Operating System. Android v8.0 (Oreo)</li>
+          <li>6.26 inches (15.9 cm) bezel-less display. Corning Gorilla Glass Protection.</li>
+          <li>Qualcomm Snapdragon 636 Octa core Processor.</li>
+          <li>12 + 5 MP Dual Rear Cameras</li>
+          <li>4000 mAh battery.</li>
+          <li>Dual SIM: Nano + Nano (Hybrid) with VoLTE support.</li>
+        </ul>
+      </h3> 
+      
+    </div>
+  </div>
+</div>
+<div class="mobiletitle">
+ <h1>
+Redmi note 6</h1>
+</div>
+<h2>&#8377 15000</h2>
+<button>Buy Now</button>
+<button>Add to cart</button>
+</div>
+<!--cards -->
+
+
+<div class="mobile-card5">
+  <div class="mobile-flip-card5">
+  <div class="mobile-flip-card-inner">
+    <div class="mobile-flip-card-front">
+      <img src="{% static 'mob5.jpg' %}"alt="Avatar" style="width:325px;height:300px;">
+    </div>
+    <div class="mobile-flip-card-back">
+      <h3>
+        <ul>
+          <li>performanceSnapdragon 855 Plus.</li>
+          <li>storage128 GB</li>
+          <li>camera48MP + 16MP + 12MP.</li>
+          <li>battery3800 mAh.</li>
+          <li>display6.55" (16.64 cm)</li>
+          <li>ram8 GB.</li>
+        </ul>
+      </h3> 
+      
+    </div>
+  </div>
+</div>
+<div class="mobiletitle">
+ <h1>
+One Plus 7T </h1>
+</div>
+<h2>&#8377 49000</h2>
+<button>Buy Now</button>
+<button>Add to cart</button>
+</div>
+<!--cards -->
+
+<div class="mobile-card6">
+  <div class="mobile-flip-card6">
+  <div class="mobile-flip-card-inner">
+    <div class="mobile-flip-card-front">
+      <img src="{% static 'mob6.jpg' %}"alt="Avatar" style="width:325px;height:300px;">
+    </div>
+    <div class="mobile-flip-card-back">
+      <h3><ul>
+        <li>Qualcomm APQ8064 Snapdragon S4 Pro</li>
+        <li>Display Type. TFT</li>
+        <li>16GB internal storage</li>
+        <li>13.0 M.Pixels rear & 2.2 M.Pixels selfie</li>
+        <li>Single SIM (Micro-SIM)</li>
+        <li>2330 mAh battery</li>
+      </ul></h3> 
+      
+    </div>
+  </div>
+</div>
+<div class="mobiletitle">
+ <h1>
+Sony Xperia </h1>
+</div>
+<h2>&#8377 25000</h2>
+<button>Buy Now</button>
+<button>Add to cart</button>
+</div>
+<hr>
+<!--cards -->
+
+<div class="mobile-card7">
+  <div class="mobile-flip-card7">
+  <div class="mobile-flip-card-inner">
+    <div class="mobile-flip-card-front">
+      <img src="{% static 'mob7.png' %}"alt="Avatar" style="width:325px;height:300px;">
+    </div>
+    <div class="mobile-flip-card-back">
+      <h3>
+      <ul>
+        <li>13MP+2MP dual rare primary camera and 8MP front facing camera</li>
+        <li>15.90 centimeters (6.26-inch) display</li>
+        <li>4000mAH lithium-polymer battery</li>
+        <li> 4GB RAM 32GB internal memory expandable up to 256GB</li>
+        <li>Dual SIM (nano+nano) dual-standby (4G+4G)</li>
+      </ul>
+      </h3> 
+      
+    </div>
+  </div>
+</div>
+<div class="mobiletitle">
+ <h1>
+Honour 8C</h1>
+</div>
+<h2>&#8377 17000</h2>
+<button>Buy Now</button>
+<button>Add to cart</button>
+
+</div>
+<!--cards -->
+
+
+<div class="mobile-card8">
+  <div class="mobile-flip-card8">
+  <div class="mobile-flip-card-inner">
+    <div class="mobile-flip-card-front">
+      <img src="{% static 'mob8.jpg' %}"alt="Avatar" style="width:325px;height:300px;">
+    </div>
+    <div class="mobile-flip-card-back">
+      <h3><ul>
+        <li>8 GB RAM | 128 GB ROM | Expandable Upto 512 GB</li>
+        <li>16.26 cm (6.4 inch) Quad HD+ Display</li>
+        <li>16MP + 12MP | 10MP + 8MP Dual Front Camera</li>
+        <li>4100 mAh Lithium-ion Battery</li>
+        <li>Exynos 9 9820 Processor</li>
+      </ul></h3> 
+     
+    </div>
+  </div>
+</div>
+<div class="mobiletitle">
+ <h1>
+Samsung S10+</h1>
+</div>
+<h2>&#8377 50000</h2>
+<button>Buy Now</button>
+<button>Add to cart</button>
+</div>
+<!--cards -->
+
+
+<div class="mobile-card9">
+  <div class="mobile-flip-card9">
+  <div class="mobile-flip-card-inner">
+    <div class="mobile-flip-card-front">
+      <img src="{% static 'mob9.png' %}"alt="Avatar" style="width:325px;height:300px;">
+    </div>
+    <div class="mobile-flip-card-back">
+      <h3><ul>
+        <li>4 GB RAM | 64 GB ROM | Expandable Upto 400 GB</li>
+        <li>14.73 cm (5.8 inch) FHD+ Display</li>
+        <li>16MP + 5MP | 16MP Front Camera</li>
+        <li>3060 mAh Battery</li>
+        <li>Qualcomm Snapdragon 636 Octacore Processor</li>
+      </ul></h3> 
+    </div>
+  </div>
+</div>
+<div class="mobiletitle">
+ <h1>
+Nokia 6 plus</h1>
+</div>
+<h2>&#8377 20000</h2>
+<button>Buy Now</button>
+<button>Add to cart</button>
+</div>
+</div>
+{% endblock %}
+</body>
+</html>
+

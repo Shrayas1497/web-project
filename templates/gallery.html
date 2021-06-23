@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <link rel="stylesheet" href="gallery.css">
+
+  
+  <style type="text/css">
+    ul {
+  list-style-type: none;
+  margin: 5;
+  padding: 5px;
+  overflow: hidden;
+  background-color:grey;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 60px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color:grey;
+}
+  	.mySlides {
+      display:none
+      margin-right:400px;
+      ;}
+  	.jumbotron{
+    position: relative;
+    padding:0 !important;
+    margin-top:70px !important;
+    background: #eee;
+    margin-top: 23px;
+    text-align:left;
+    margin-bottom: 0 !important;
+    height: 200px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.laptop-card1{
+     width: 25%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px; 
+     margin: 3%;
+    }
+  
+ 
+
+.laptoptitle{
+ 
+  text-align: center;
+  padding: 10px;
+  
+ }
+ 
+
+h1{
+  font-size: 25px;
+ }
+
+ h2{
+ 	padding-top: 10px;
+ 	padding-left: 10px;
+ }
+
+
+
+.laptop-flip-card1{
+  background-color: transparent;
+  width: 325px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.laptop-flip-card-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.laptop-flip-card1:hover .laptop-flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.laptop-flip-card-front, .laptop-flip-card-back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.laptop-flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.laptop-flip-card-back {
+  background-color: grey;
+  color: white;
+  transform: rotateY(180deg);
+
+
+  </style>
+
+</head>
+<body>
+  <div class="navigation-bar">
+    <ul>
+ <li><a class="active" href="{% url 'home' %}">Home</a></li>
+  <li><a href="/mobiles" href="mobiles.html">Mobiles</a></li>
+  <li><a href="/headsets" href="headsets.html">Headsets</a></li>
+  <li><a href="/tablets" href="tabs.html">Tablets</a></li>
+  <li><a href="/laptops" href="laptops.html">laptops</a></li>
+</ul>
+</div>
+
+
+	<div class="w3-content w3-section" style="height: 200px width:600px; margin-left: 200px">
+  <img class="mySlides" src="/static/lap.jpg" style="width:80%">
+  <img class="mySlides" src="/static/tab.jpg" style="width:80%">
+  <img class="mySlides" src="/static/top.jpg" style="width:80%">
+   <img class="mySlides" src="/static/p.jpg" style="width:80%">
+  
+  
+</div>
+
+<div class="jumbotron">
+<h3 style="align-content:left";>About us</h3>
+<p>Online e-commerce site for electronic gadgets and getting it delivered at the desired place is less time consuming for people with too much of work load. Nowadays electronic gadgets had became basic need for every human being, so being able to deliver the products of choice to the customers place is like serving people with their needs</p>
+<p>To produce a system that allows customer to register and for the company to effectively manage e-commerce site for electronic gadgets business. To ease customers task whenever their feel like having good experience. </p>
+</div>
+<h2>Developers info...</h2>
+<div class="row">
+
+<div class="laptop-card1">
+	<div class="laptop-flip-card1">
+  <div class="laptop-flip-card-inner">
+    <div class="laptop-flip-card-front">
+      <img src="/static/vinay.jpg"alt="Avatar" style="width:340px;height:300px;">
+    </div>
+    <div class="laptop-flip-card-back">
+      <h3>
+      	CH vinaykumar<br>
+      	4NN16CS019<br>
+      	Computer Science<br>
+      	NIE institure of technology
+  
+      </h3>
+    </div>
+  </div>
+</div>
+<div class="laptoptitle">
+
+ <h1>
+CH Vinaykumar</h1>
+</div>
+</div>
+<div class="laptop-card1">
+	<div class="laptop-flip-card1">
+  <div class="laptop-flip-card-inner">
+    <div class="laptop-flip-card-front">
+      <img src="/static/shrayas.jpeg"alt="Avatar" style="width:340px;height:300px;">
+    </div>
+    <div class="laptop-flip-card-back">
+      <h3>
+      	Shrayas ranjan<br>
+      	4NN16CS044<br>
+      	Computer Science<br>
+      	NIE institure of technology
+  
+      </h3>
+    </div>
+  </div>
+</div>
+<div class="laptoptitle">
+
+ <h1>
+Shrayas ranjan</h1>
+</div>
+</div>
+<div class="laptop-card1">
+	<div class="laptop-flip-card1">
+  <div class="laptop-flip-card-inner">
+    <div class="laptop-flip-card-front">
+      <img src="/static/abhishek.jpeg"alt="Avatar" style="width:340px;height:300px;">
+    </div>
+    <div class="laptop-flip-card-back">
+      <h3>
+      	Abhishek GR<br>
+      	4NN16CS002<br>
+      	Computer Science<br>
+      	NIE institure of technology
+  
+      </h3>
+    </div>
+  </div>
+</div>
+<div class="laptoptitle">
+
+ <h1>
+Abhishek GR</h1>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>

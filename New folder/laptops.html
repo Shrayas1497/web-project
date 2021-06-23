@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Laptops</title>
+</head>
+
+<style type="text/css">
+
+
+*{
+ margin: 0px;
+ padding: 0px;
+}
+body{
+ font-family: arial;
+}
+.main{
+
+ margin: 2%;
+}
+ul {
+  list-style-type: none;
+  margin: 5;
+  padding: 5px;
+  overflow: hidden;
+  background-color:grey;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 60px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color:grey;
+}
+.laptop-card1,.laptop-card2,.laptop-card3,.laptop-card4,.laptop-card5,.laptop-card6,.laptop-card7,.laptop-card8,.laptop-card9{
+     width: 25%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px; 
+     margin: 3%;
+    }
+  
+ 
+
+.laptoptitle{
+ 
+  text-align: center;
+  padding: 10px;
+  
+ }
+ 
+
+h1{
+  font-size: 25px;
+ }
+
+ h2{
+ 	padding-top: 10px;
+ 	padding-left: 10px;
+ }
+
+.laptop1des,.laptop2des,.laptop3des,.laptop4des,.laptop5des,.laptop6des,.laptop7des,.laptop8des,.laptop9des{
+  padding: 3px;
+  text-align: center;
+  height: 150px;
+ 
+  padding-top: 10px;
+        border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+button{
+  margin-top: 80px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+}
+button:hover{
+  background-color: blue;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+  text-align: center;
+}
+
+.laptop-flip-card1,.laptop-flip-card2,.laptop-flip-card3,.laptop-flip-card4,.laptop-flip-card5,.laptop-flip-card6,.laptop-flip-card7,.laptop-flip-card8,.laptop-flip-card9 {
+  background-color: transparent;
+  width: 325px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.laptop-flip-card-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.laptop-flip-card1:hover .laptop-flip-card-inner,.laptop-flip-card2:hover .laptop-flip-card-inner,.laptop-flip-card3:hover .laptop-flip-card-inner,.laptop-flip-card4:hover .laptop-flip-card-inner,.laptop-flip-card5:hover .laptop-flip-card-inner,.laptop-flip-card6:hover .laptop-flip-card-inner,.laptop-flip-card7:hover .laptop-flip-card-inner,.laptop-flip-card8:hover .laptop-flip-card-inner,.laptop-flip-card9:hover .laptop-flip-card-inner{
+  transform: rotateY(180deg);
+}
+
+.laptop-flip-card-front, .laptop-flip-card-back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.laptop-flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.laptop-flip-card-back {
+  background-color: grey;
+  color: white;
+  transform: rotateY(180deg);
+  
+
+}
+h3{
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-left: 20px;
+}
+
+</style>
+<body>
+  <div class="navigation-bar">
+  	<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+</div>
+  
+
+<div class="main">
+  <div class="row1">
+
+ <!--cards -->
+
+<div class="laptop-card1">
+	<div class="laptop-flip-card1">
+  <div class="laptop-flip-card-inner">
+    <div class="laptop-flip-card-front">
+      <img src="laptop1.jpeg"alt="Avatar" style="width:325px;height:300px;">
+    </div>
+    <div class="laptop-flip-card-back">
+      <h3>
+    <ul>
+      <li>7th Gen Intel i5-7200U</li>
+      <li>8GB DDR4-2400 RAM</li>
+      <li>Expandable to 16 GB, 1TB 5400 RPM HDD</li>
+      <li>Display Resolution Maximum  1920 x 1080</li>
+      <li>Processor Speed 1.70 GHz</li>
+      <li>Product Dimensions  37.6 x 24.6 x 2.3 cm</li>
+    </ul>
+      </h3>
+    </div>
+  </div>
+</div>
+<div class="laptoptitle">
+
+ <h1>
+HP 15 Intel Core i5 7th gen</h1>
+</div>
+<h2>&#8377 50000</h2>
+<button>Buy Now</button>
+<button style="align: 50px">Add to cart</button>
+
+</div>
+<!--cards -->
+
+
+<div class="laptop-card2">
+	<div class="laptop-flip-card2">
+  <div class="laptop-flip-card-inner">
+    <div class="laptop-flip-card-front">
+      <img src="laptop2.jpeg"alt="Avatar" style="width:325px;height:300px;">
+    </div>
+    <div class="laptop-flip-card-back">
+      <h3>
+        <ul>
+          <li>Intel i5 8250U Processor (1.6 to 3.4 Ghz Turbo Boost)</li>
+          <li>Windows 10 Home</li>
+          <li>15.6" FHD (1920*1080) Display</li>
+          <li>8GB RAM & 2TB HDD</li>
+          <li>2GB Dedicated AMD Graphics Card</li>
+          <li>2.25Kgs Weight</li>
+          
+        </ul>
+      </h3> 
+      
+    </div>
+  </div>
+</div>
+
+<div class="laptoptitle">
+ <h1>
+Dell Inspiron Core i5 8th Gen </h1>
+</div>
+<div class="laptop1price"><h2>&#8377 60000</h2></div>
+<button>Buy Now</button>
+<button>Add to cart</button>
+
+</div>
+
+
+<!--cards -->
+
+
+<div class="laptop-card3">
+
+<div class="laptop-flip-card3">
+  <div class="laptop-flip-card-inner">
+    <div class="laptop-flip-card-front">
+      <img src="laptop3.jpg"alt="Avatar" style="width:325px;height:300px;">
+    </div>
+    <div class="laptop-flip-card-back">
+      <h3>
+        <ul>
+          <li>Processor: 8th Generation Intel(r) Core(tm) i3-8145U Processor</li>
+          <li>Pre-loaded Windows 10 with lifetime validity</li>
+          <li>Display: 14.0-inch HD (1366 x 768)</li>
+          <li>4GB DDR4 RAM with Intel HD Graphics | Storage: 1TB HDD</li>
+          <li>Upto 16 GB RAM Upgrade</li>
+          <li>No SSD Slot</li>
+        </ul>
+      </h3> 
+  
+    </div>
+  </div>
+</div>
+<div class="laptoptitle">
+ <h1>
+Dell Vostro 3480 Intel Core i3 8th Gen </h1>
+</div>
+<div class="laptop3price"><h2>&#8377 35000</h2></div>
+<button>Buy Now</button>
+<button>Add to cart</button>
+</div>
+</div>
+<hr>
+<!--cards -->
+
+
+<div class="laptop-card4">
+
+<div class="laptop-flip-card4">
+  <div class="laptop-flip-card-inner">
+    <div class="laptop-flip-card-front">
+      <img src="laptop4.jpeg"alt="Avatar" style="width:325px;height:300px;">
+    </div>
+    <div class="laptop-flip-card-back">
+      <h3>
+        <ul>
+          <li>3.1 GHz AMD 2-Core A9-9425 processor.</li>
+          <li>4GB DDR4 RAM.</li>
+          <li>1TB 5400rpm hard drive.</li>
+          <li>15.6-inch screen, AMD Radeon R5 graphics.</li>
+          <li>Windows 10 operating system.</li>
+          <li>1.9kg laptop.</li>
+        </ul>
+      </h3> 
+      
+    </div>
+  </div>
+</div>
+<div class="laptoptitle">
+ <h1>
+ASUS VivoBooK AMD 2-Core A9</h1>
+</div>
+<div class="laptop4price"><h2>&#8377 50000</h2></div>
+<button>Buy Now</button>
+<button>Add to cart</button>
+</div>
+<!--cards -->
+
+
+<div class="laptop-card5">
+
+<div class="laptop-flip-card5">
+  <div class="laptop-flip-card-inner">
+    <div class="laptop-flip-card-front">
+      <img src="laptop5.png"alt="Avatar" style="width:325px;height:300px;">
+    </div>
+    <div class="laptop-flip-card-back">
+      <h3>
+        <ul>
+          <li>Core™ i3. i3-8145U. 2.10 GHz</li>
+          <li>GeForce MX230. Up to 2 GB. GDDR5. ...</li>
+          <li>Solid State Drive Configuration. 1 x 256 GB. 256 GB.</li>
+          <li>Bluetooth Standard. Bluetooth 4.2.</li>
+          <li>5.5 hours battery life, 2.1kg laptop</li>
+          <li>4GB DDR4 RAM</li>
+        </ul>
+      </h3> 
+      
+    </div>
+  </div>
+</div>
+<div class="laptoptitle">
+ <h1>
+Acer Aspire 3 Thin A315-55G </h1>
+</div>
+<div class="laptop5price"><h2>&#8377 50000</h2></div>
+<button>Buy Now</button>
+<button>Add to cart</button>
+</div>
+<!--cards -->
+
+<div class="laptop-card6">
+
+<div class="laptop-flip-card6">
+  <div class="laptop-flip-card-inner">
+    <div class="laptop-flip-card-front">
+      <img src="laptop6.jpeg"alt="Avatar" style="width:325px;height:300px;">
+    </div>
+    <div class="laptop-flip-card-back">
+      <h3>
+        <ul>
+          <li>1.6GHz Intel Core i5-8265U processor</li>
+          <li>8GB DDR4 RAM</li>
+          <li>Storage: 256 GB SSD</li>
+          <li>14.0-inch screen, Intel UHD Graphics 620 Graphics</li>
+          <li>Windows 10 (64-bit) operating system</li>
+          <li>Light Weight: 995 grams laptop</li>
+          <li>Long-lasting 72Wh battery for up to 23. 5 hours</li>
+        </ul>
+      </h3> 
+      
+    </div>
+  </div>
+</div>
+<div class="laptoptitle">
+ <h1>
+LG Gram 14Z990 2019 intel i5 </h1>
+</div>
+<div class="laptop6price"><h2>&#8377 40000</h2></div>
+<button>Buy Now</button>
+<button>Add to cart</button>
+</div>
+<hr>
+<!--cards -->
+
+<div class="laptop-card7">
+
+<div class="laptop-flip-card7">
+  <div class="laptop-flip-card-inner">
+    <div class="laptop-flip-card-front">
+      <img src="laptop7.jpeg"alt="Avatar" style="width:325px;height:300px;">
+    </div>
+    <div class="laptop-flip-card-back">
+      <h3>
+        <ul>
+          <li>7th Gen Intel Core i3-7020U processor</li>
+          <li>Display: 15.6-inch FHD (1920x1080) display</li>
+          <li>4GB DDR4 RAM with Intel HD 620 Graphics</li>
+          <li>1TB HDD, HDD Speed(RPM): 5400 RPM</li>
+          <li> Laptop weight: 2.04 kg | Lithium battery</li>
+          <li>Ports & CD drive: 1 HDMI, 2 USB 3.0, 1 USB 2.0, 1 Audio-output</li>
+        </ul>
+      </h3> 
+      
+    </div>
+  </div>
+</div>
+<div class="laptoptitle">
+ <h1>
+HP 15 Core i3 7th Gen </h1>
+</div>
+<div class="laptop7price"><h2>&#8377 60000</h2></div>
+<button>Buy Now</button>
+<button>Add to cart</button>
+
+</div>
+<!--cards -->
+
+
+<div class="laptop-card8">
+
+<div class="laptop-flip-card8">
+  <div class="laptop-flip-card-inner">
+    <div class="laptop-flip-card-front">
+      <img src="laptop8.png"alt="Avatar" style="width:325px;height:300px;">
+    </div>
+    <div class="laptop-flip-card-back">
+      <h3>
+        <ul>
+          <li>Dual-core 5th-generation Intel Core i5 processor</li>
+          <li>Intel HD Graphics 6000</li>
+          <li>SSD storage</li>
+          <li>8GB memory</li>
+          <li>Two USB 3 ports</li>
+          <li>Thunderbolt 2 port</li>
+          <li>Up to 12 hours of battery life</li>
+        </ul>
+      </h3> 
+     
+    </div>
+  </div>
+</div>
+<div class="laptoptitle">
+ <h1>
+Apple MacBook Air </h1>
+</div>
+<div class="laptop8price"><h2>&#8377 62000</h2></div>
+<button>Buy Now</button>
+<button>Add to cart</button>
+</div>
+<!--cards -->
+
+
+<div class="laptop-card9">
+
+<div class="laptop-flip-card9">
+  <div class="laptop-flip-card-inner">
+    <div class="laptop-flip-card-front">
+      <img src="laptop9.jpg"alt="Avatar" style="width:325px;height:300px;">
+    </div>
+    <div class="laptop-flip-card-back">
+      <h3>
+        <ul>
+          <li>8th Generation Core Intel I5-8265U processor</li>
+          <li>Display: 15.6-inch screen with (1920X1080) full HD display</li>
+          <li>Memory and Storage: 8 GB RAM | Storage 1 TB HDD</li>
+          <li>Battery Life: Upto 5.5 hours as per MobileMark 2014</li>
+        </ul>
+      </h3> 
+    </div>
+  </div>
+</div>
+<div class="laptoptitle">
+ <h1>
+Lenovo IdeaPad S145</h1>
+</div>
+<div class="laptop9price"><h2>&#8377 40000</h2></div>
+<button>Buy Now</button>
+<button>Add to cart</button>
+</div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,205 @@
+{%  load static %}
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Laptops</title>
+</head>
+
+<style type="text/css">
+
+
+*{
+ margin: 0px;
+ padding: 0px;
+}
+body{
+ font-family: arial;
+}
+.main{
+
+ margin: 2%;
+}
+ul {
+  list-style-type: none;
+  margin: 5;
+  padding: 5px;
+  overflow: hidden;
+  background-color:grey;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 60px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color:grey;
+}
+.laptop-card1,.laptop-card2,.laptop-card3,.laptop-card4,.laptop-card5,.laptop-card6,.laptop-card7,.laptop-card8,.laptop-card9{
+     width: 25%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px; 
+     margin: 3%;
+    }
+  
+ 
+
+.laptoptitle{
+ 
+  text-align: center;
+  padding: 10px;
+  
+ }
+ 
+
+h1{
+  font-size: 25px;
+ }
+
+ h2{
+  padding-top: 10px;
+  padding-left: 10px;
+ }
+
+.laptop1des,.laptop2des,.laptop3des,.laptop4des,.laptop5des,.laptop6des,.laptop7des,.laptop8des,.laptop9des{
+  padding: 3px;
+  text-align: center;
+  height: 150px;
+ 
+  padding-top: 10px;
+        border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+button{
+  margin-top: 80px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+}
+button:hover{
+  background-color: blue;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+  text-align: center;
+}
+
+.laptop-flip-card1,.laptop-flip-card2,.laptop-flip-card3,.laptop-flip-card4,.laptop-flip-card5,.laptop-flip-card6,.laptop-flip-card7,.laptop-flip-card8,.laptop-flip-card9 {
+  background-color: transparent;
+  width: 325px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.laptop-flip-card-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.laptop-flip-card1:hover .laptop-flip-card-inner,.laptop-flip-card2:hover .laptop-flip-card-inner,.laptop-flip-card3:hover .laptop-flip-card-inner,.laptop-flip-card4:hover .laptop-flip-card-inner,.laptop-flip-card5:hover .laptop-flip-card-inner,.laptop-flip-card6:hover .laptop-flip-card-inner,.laptop-flip-card7:hover .laptop-flip-card-inner,.laptop-flip-card8:hover .laptop-flip-card-inner,.laptop-flip-card9:hover .laptop-flip-card-inner{
+  transform: rotateY(180deg);
+}
+
+.laptop-flip-card-front, .laptop-flip-card-back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.laptop-flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.laptop-flip-card-back {
+  background-color: grey;
+  color: white;
+  transform: rotateY(180deg);
+  
+
+}
+h3{
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-left: 20px;
+}
+.jumbotron{
+  position: relative;
+  padding: 0 !important;
+  margin-top: 70px !important;
+  background:#eee;
+  margin-top: 23px;
+  text-align: left;
+  margin-bottom: 0 !important;
+  height: 200px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+</style>
+<body>
+  <div class="navigation-bar">
+    <ul>
+ <li><a class="active" href="{% url 'home' %}">Home</a></li>
+   <li><a href="/mobiles" href="mobiles.html">Mobiles</a></li>
+ <li><a href="/laptops" href="laptops.html">laptops</a></li>
+  <li><a href="/tablets" href="tabs.html">Tablets</a></li>
+  <li><a href="/cart">cart</a></li>
+</ul>
+</div>
+<div class="jumbotron">
+    <h1 style="align-content: left";>Headsets sale is on........</h1>
+  </div>
+  
+{% block header %}
+
+
+{% for id, name, price, path,description in data %}
+
+<div class="laptop-card1">
+  <div class="laptop-flip-card1">
+  <div class="laptop-flip-card-inner">
+    <div class="laptop-flip-card-front">
+      <img src="{% static path %}"alt="Avatar" style="width:325px;height:300px;">
+    </div>
+    <div class="laptop-flip-card-back">
+      <h3>
+    <ul>
+      <li>{{description}}</li>
+    </ul>
+      </h3>
+    </div>
+  </div>
+</div>
+<div class="laptoptitle">
+
+ <h1>{{name}}</h1>
+</div>
+<h2>&#8377 {{price}}</h2>
+<!-- <form method="post" action="/addtocart"> -->
+  <a href="/addtocart?headset={{id}}"><button style="margin-left:10px" >Add to cart</button></a>
+  <a href="/buynow?headset={{id}}"><button style="margin-left:10px" value="{{id}}">Buy now</button></a>
+<!-- </form> -->
+</div>
+{% endfor %}
+
+{% endblock %}
+</body>
+</html>
+

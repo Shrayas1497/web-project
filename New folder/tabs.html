@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Tabs</title>
+</head>
+
+<style type="text/css">
+
+
+*{
+ margin: 0px;
+ padding: 0px;
+}
+body{
+ font-family: arial;
+}
+.main{
+
+ margin: 2%;
+}
+ul {
+  list-style-type: none;
+  margin: 5;
+  padding: 5px;
+  overflow: hidden;
+  background-color:grey;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 60px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color:grey;
+}
+.tab-card1,.tab-card2,.tab-card3,.tab-card4,.tab-card5,.tab-card6,.tab-card7,.tab-card8,.tab-card9{
+     width: 25%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px; 
+     margin: 3%;
+    }
+  
+ 
+
+.tabtitle{
+ 
+  text-align: center;
+  padding: 10px;
+  
+ }
+ 
+
+h1{
+  font-size: 25px;
+ }
+
+ h2{
+ 	padding-top: 10px;
+ 	padding-left: 10px;
+ }
+button{
+  margin-top: 80px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+}
+button:hover{
+  background-color: blue;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+  text-align: center;
+}
+
+.tab-flip-card1,.tab-flip-card2,.tab-flip-card3,.tab-flip-card4,.tab-flip-card5,.tab-flip-card6,.tab-flip-card7,.tab-flip-card8,.tab-flip-card9 {
+  background-color: transparent;
+  width: 325px;
+  height: 300px;
+  perspective: 1000px;
+}
+.tab-flip-card-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.tab-flip-card1:hover .tab-flip-card-inner,.tab-flip-card2:hover .tab-flip-card-inner,.tab-flip-card3:hover .tab-flip-card-inner,.tab-flip-card4:hover .tab-flip-card-inner,.tab-flip-card5:hover .tab-flip-card-inner,.tab-flip-card6:hover .tab-flip-card-inner,.tab-flip-card7:hover .tab-flip-card-inner,.tab-flip-card8:hover .tab-flip-card-inner,.tab-flip-card9:hover .tab-flip-card-inner{
+  transform: rotateY(180deg);
+}
+
+.tab-flip-card-front, .tab-flip-card-back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.tab-flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.tab-flip-card-back {
+  background-color: grey;
+  color: white;
+  transform: rotateY(180deg);
+}
+h3{
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-left: 20px;
+}
+
+</style>
+<body>
+  <div class="navigation-bar">
+  	<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+</div>
+  
+
+<div class="main">
+  <div class="row1">
+
+ <!--cards -->
+
+<div class="tab-card1">
+	<div class="tab-flip-card1">
+  <div class="tab-flip-card-inner">
+    <div class="tab-flip-card-front">
+      <img src="tab1.png"alt="Avatar" style="width:325px;height:300px;">
+    </div>
+    <div class="tab-flip-card-back">
+      <h3>
+      
+         10.5" Super AMOLED Display<br>
+More innovative and Powerful S Pen<br>
+5.7 mm Slim 420g<br>
+Ultra Wide Camera<br>
+RAM Size  6 GB<br>Item Height:25.5 Centimeters
+          
+        
+      </h3>
+    </div>
+  </div>
+</div>
+<div class="tabtitle">
+
+ <h1>
+Samsung Galaxy Tab S6</h1>
+</div>
+<h2>&#8377 30000</h2>
+<button>Buy Now</button>
+<button style="align: 50px">Add to cart</button>
+
+</div>
+<!--cards -->
+
+
+<div class="tab-card2">
+  <div class="tab-flip-card2">
+  <div class="tab-flip-card-inner">
+    <div class="tab-flip-card-front">
+      <img src="tab2.png"alt="Avatar" style="width:325px;height:300px;">
+    </div>
+    <div class="tab-flip-card-back">
+      <h3>
+     10.5-inch Retina display with True Tone and wide color<br>
+A12 Bionic chip<br>
+Touch ID fingerprint sensor and Apple Pay<br>
+8MP back camera, 7MP FaceTime HD front camera<br>
+Stereo speakers<br>
+802.11ac Wi-Fi and Gigabit-class LTE cellular data<br>
+Up to 10 hours of battery life
+      </h3> 
+      
+    </div>
+  </div>
+</div>
+
+<div class="tabtitle">
+ <h1>
+Apple iPad Air</h1>
+</div>
+<h2>&#8377 70000</h2>
+<button>Buy Now</button>
+<button>Add to cart</button>
+
+</div>
+
+
+<!--cards -->
+
+
+<div class="tab-card3">
+  <div class="tab-flip-card3">
+  <div class="tab-flip-card-inner">
+    <div class="tab-flip-card-front">
+      <img src="tab3.png"alt="Avatar" style="width:325px;height:300px;">
+    </div>
+    <div class="tab-flip-card-back">
+      <h3>
+       Display 10.10-inch (1920x1200)<br>
+Processor Kirin 659.<br>
+Front Camera 2MP.<br>
+RAM 2GB.<br>
+OS Android 8.0 Oreo.<br>
+Storage 16GB.<br>
+Rear Camera 5MP.<br>
+Battery Capacity 5100mAh.
+      </h3> 
+  
+    </div>
+  </div>
+</div>
+<div class="tabtitle">
+ <h1>
+HUAWEI T5 Tablet</h1>
+</div>
+<h2>&#8377 17000</h2>
+<button>Buy Now</button>
+<button>Add to cart</button>
+</div>
+</div>
+<hr>
+<!--cards -->
+
+
+<div class="tab-card4">
+  <div class="tab-flip-card4">
+  <div class="tab-flip-card-inner">
+    <div class="tab-flip-card-front">
+      <img src="tab4.png"alt="Avatar" style="width:325px;height:300px;">
+    </div>
+    <div class="tab-flip-card-back">
+      <h3>
+       5MP primary camera with 2MP front facing camera<br>
+       25.654 centimeters (10.1-inch) FHD <br>
+       Android v8.0 Oreo operating system <br>
+       4850mAH lithium-ion battery
+</h3> 
+      
+    </div>
+  </div>
+</div>
+<div class="tabtitle">
+ <h1>
+Lenovo tab M10</h1>
+</div>
+<h2>&#8377 16000</h2>
+<button>Buy Now</button>
+<button>Add to cart</button>
+</div>
+<!--cards -->
+
+
+<div class="tab-card5">
+  <div class="tab-flip-card5">
+  <div class="tab-flip-card-inner">
+    <div class="tab-flip-card-front">
+      <img src="tab5.png"alt="Avatar" style="width:325px;height:300px;">
+    </div>
+    <div class="tab-flip-card-back">
+      <h3>9.7-inch Retina display<br>
+A10 Fusion chip with 64-bit desktop-class architecture<br>
+Touch ID fingerprint sensor<br>
+8MP camera with 1080p video and 1.2MP FaceTime HD camera<br>
+802.11ac Wi-Fi with MIMO<br>
+Up to 10 hours of battery life</h3>
+      
+    </div>
+  </div>
+</div>
+<div class="tabtitle">
+ <h1>
+Apple iPad (Wi-Fi, 32GB)</h1>
+</div>
+<h2>&#8377 25000</h2>
+<button>Buy Now</button>
+<button>Add to cart</button>
+</div>
+<!--cards -->
+
+<div class="tab-card6">
+  <div class="tab-flip-card6">
+  <div class="tab-flip-card-inner">
+    <div class="tab-flip-card-front">
+      <img src="tab6.png"alt="Avatar" style="width:325px;height:300px;">
+    </div>
+    <div class="tab-flip-card-back">
+      <h3>13MP primary camera and 8MP front facing camera<br>
+26.67 centimeters (10.5-inch) with 2560 x 1600 pixels resolution<br>
+Android v9.0 Pie operating system <br>4GB RAM, 64GB internal memory expandable up to 512GB<br>
+7040mAH lithium-ion battery</h3> 
+      
+    </div>
+  </div>
+</div>
+<div class="tabtitle">
+ <h1>
+
+Samsung Galaxy Tab S5e</h1>
+</div>
+<h2>&#8377 36000</h2>
+<button>Buy Now</button>
+<button>Add to cart</button>
+</div>
+<hr>
+<!--cards -->
+
+<div class="tab-card7">
+  <div class="tab-flip-card7">
+  <div class="tab-flip-card-inner">
+    <div class="tab-flip-card-front">
+      <img src="tab7.png"alt="Avatar" style="width:325px;height:300px;">
+    </div>
+    <div class="tab-flip-card-back">
+      <h3>8MP primary camera and 5MP front facing camera<br>
+25.654 centimeters (10.1-inch) with 1920 x 1200 pixels resolution<br>
+32 GB internal memory, expandable up to 512 GB<br>
+6000mAH lithium-ion battery<br>
+1 year manufacturer warranty for device and 6 months manufacturer warranty</h3> 
+      
+    </div>
+  </div>
+</div>
+<div class="tabtitle">
+ <h1>
+Samsung Galaxy Tab A 10.1 </h1>
+</div>
+<h2>&#8377 17000</h2>
+<button>Buy Now</button>
+<button>Add to cart</button>
+
+</div>
+<!--cards -->
+
+
+<div class="tab-card8">
+  <div class="tab-flip-card8">
+  <div class="tab-flip-card-inner">
+    <div class="tab-flip-card-front">
+      <img src="tab10.png"alt="Avatar" style="width:325px;height:300px;">
+    </div>
+    <div class="tab-flip-card-back">
+      <h3>8MP primary camera with auto focus and 8MP front facing camera<br>
+      20.32 centimeters (8-inch) HD IPS capacitive touchscreen<br> Android v6.0 Marshmallow operating system with 1.3GHz Qualcomm<br>6200mAH lithium-ion battery providing talk-time of 20 hours</h3> 
+     
+    </div>
+  </div>
+</div>
+<div class="tabtitle">
+ <h1>
+
+Lenovo Yoga Tab 3 8 Tablet</h1>
+</div>
+<h2>&#8377 13000</h2>
+<button>Buy Now</button>
+<button>Add to cart</button>
+</div>
+<!--cards -->
+
+
+<div class="tab-card9">
+  <div class="tab-flip-card9">
+  <div class="tab-flip-card-inner">
+    <div class="tab-flip-card-front">
+      <img src="tab9.png"alt="Avatar" style="width:325px;height:300px;">
+    </div>
+    <div class="tab-flip-card-back">
+      <h3>Carry It Along 2 in 1 Laptop<br>
+10 inch HD LED Backlit PixelSense Display with Corning Gorilla Glass 3<br>
+Light Laptop without Optical Disk Drive<br>Battery Backup
+Upto 9 hours<br>RAM
+4 GB<br>Clock Speed
+1.6 GHz </h3> 
+    </div>
+  </div>
+</div>
+<div class="tabtitle">
+ <h1>
+Microsoft Surface Go Pentiumz</h1>
+</div>
+<h2>&#8377 30000</h2>
+<button>Buy Now</button>
+<button>Add to cart</button>
+</div>
+</div>
+</body>
+</html>
+

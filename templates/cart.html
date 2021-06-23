@@ -1,0 +1,78 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<style type="text/css">
+ 	body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 80px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 10px 30px 5px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 30px;
+}
+.col-25 {
+    margin-bottom: 40px;
+  }
+  span.price {
+  float: right;
+  color: grey;
+}
+span.no_of_items{
+	float: right;
+  color: grey;
+}
+button{
+	position:relative;
+    transition: .5s ease;
+    top: 80px;
+    left: 520px;
+    right: -420px;
+    bottom: -191px;
+     border: 1px solid black;
+  border-radius: 5px;
+  padding: 15px 52px;
+}
+button:hover{
+  background-color: green;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+  text-align: center;
+  }
+</style>
+ </head>
+ <body>
+ 	<div class="col-25">
+    <div class="container">
+      <h4>Cart <span class="no_of_items" style="color:black"> <b>2</b></span></h4>
+      <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+      <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+            <hr>
+      <p>Total 
+      	<span class="price" style="color:black">
+      		<b>$20</b>
+      	</span>
+      </p>
+    </div>
+  </div>
+  <div>
+  	<button onclick="myFunction()">Checkout</button>
+  </div>
+  <script>
+function myFunction() {
+  location.replace('/payment')
+}
+</script>
+
+ 
+ </body>
+ </html>
+
+ 
+
+
+ 

@@ -1,0 +1,196 @@
+{%  load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Mobiles</title>
+</head>
+
+<style type="text/css">
+
+
+*{
+ margin: 0px;
+ padding: 0px;
+}
+body{
+ font-family: arial;
+}
+.main{
+
+ margin: 2%;
+}
+ul {
+  list-style-type: none;
+  margin: 5;
+  padding: 5px;
+  overflow: hidden;
+  background-color:grey;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 60px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color:grey;
+}
+.mobile-card1,.mobile-card2,.mobile-card3,.mobile-card4,.mobile-card5,.mobile-card6,.mobile-card7,.mobile-card8,.mobile-card9{
+     width: 25%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px; 
+     margin: 3%;
+    }
+  
+ 
+
+.mobiletitle{
+ 
+  text-align: center;
+  padding: 10px;
+  
+ }
+ 
+
+h1{
+  font-size: 25px;
+ }
+
+ h2{
+ 	padding-top: 10px;
+ 	padding-left: 10px;
+ }
+button{
+  margin-top: 80px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+}
+button:hover{
+  background-color: blue;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+  text-align: center;
+}
+
+.mobile-flip-card1,.mobile-flip-card2,.mobile-flip-card3,.mobile-flip-card4,.mobile-flip-card5,.mobile-flip-card6,.mobile-flip-card7,.mobile-flip-card8,.mobile-flip-card9 {
+  background-color: transparent;
+  width: 325px;
+  height: 300px;
+  perspective: 1000px;
+}
+.mobile-flip-card-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.mobile-flip-card1:hover .mobile-flip-card-inner,.mobile-flip-card2:hover .mobile-flip-card-inner,.mobile-flip-card3:hover .mobile-flip-card-inner,.mobile-flip-card4:hover .mobile-flip-card-inner,.mobile-flip-card5:hover .mobile-flip-card-inner,.mobile-flip-card6:hover .mobile-flip-card-inner,.mobile-flip-card7:hover .mobile-flip-card-inner,.mobile-flip-card8:hover .mobile-flip-card-inner,.mobile-flip-card9:hover .mobile-flip-card-inner{
+  transform: rotateY(180deg);
+}
+
+.mobile-flip-card-front, .mobile-flip-card-back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.mobile-flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.mobile-flip-card-back {
+  background-color: grey;
+  color: white;
+  transform: rotateY(180deg);
+}
+h3{
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-left: 20px;
+}
+.jumbotron{
+  position: relative;
+  padding: 0 !important;
+  margin-top: 70px !important;
+  background:#eee;
+  margin-top: 23px;
+  text-align: left;
+  margin-bottom: 0 !important;
+  height: 200px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+</style>
+<body>
+  <div class="navigation-bar">
+  	<ul>
+  <li><a class="active" href="{% url 'home' %}">Home</a></li>
+    <li><a href="/laptops" href="laptops.html">laptops</a></li>
+  <li><a href="/tablets" href="tabs.html">Tablets</a></li>
+  <li><a href="/headsets" href="headsets.html">Headsets</a></li>
+<li><a href="/cart">cart</a></li>
+</ul>
+</div>
+<div class="jumbotron">
+    <h1 style="align-content: left";>Mobiles sale is on........</h1>
+  </div>
+  
+
+<div class="main">
+  <div class="row1">
+
+ <!--cards -->
+
+
+{% for id, name, price, path,description in data %}
+
+<div class="mobile-card4">
+  <div class="mobile-flip-card4">
+  <div class="mobile-flip-card-inner">
+    <div class="mobile-flip-card-front">
+      <img src="{% static path %}"alt="Avatar" style="width:325px;height:300px;">
+    </div>
+    <div class="mobile-flip-card-back">
+      <h3>
+        <ul>
+         {{description}}
+        </ul>
+      </h3> 
+      
+    </div>
+  </div>
+</div>
+<div class="mobiletitle">
+ <h1> {{ name}}</h1>
+</div>
+<h2>&#8377 {{price}}</h2>
+<!-- <form method="get" action="/addtocart"> -->
+  <a href="/addtocart?mobile={{id}}"><button style="margin-left:10px" name="atc" value="{{id}}">Add to cart</button></a>
+  <a href="/buynow?mobile={{id}}"><button style="margin-left:10px" name="bn" value="{{id}}">Buy now</button></a>
+<!-- </form> -->
+</div>
+{% endfor %}
+
+</body>
+</html>
+
